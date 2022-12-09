@@ -105,7 +105,6 @@ html, body{
         display: flex;
         justify-content: end;
         align-items: center;
-        /*padding: 0;*/
     }
         .top-menu .site-settings {
             display: flex;
@@ -118,7 +117,7 @@ html, body{
                     background-color: var(--color-theme);
                     color: var(--color-white);
                     border:none;
-                    padding: 0;
+                    padding:0;
                 }
                     .top-menu .site-settings .dropdown-theme button:hover{
                         color: var(--color-theme-dark);
@@ -140,6 +139,7 @@ html, body{
                             background-color: var(--color-theme-dark);
                             color: var(--color-white);
                         }
+
         .top-menu .menu-links{
             display: none;
         }
@@ -172,7 +172,7 @@ html, body{
     background-color: var(--color-white);
     color: var(--color-theme-dark);
 }
-    .main-menu >.container{
+    .main-menu > .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -185,7 +185,7 @@ html, body{
         .main-menu .search{
             flex:4;
         }
-        .main-menu .menu-links{
+        .main-menu .menu-links {
             flex:3;
             display: flex;
             justify-content: end;
@@ -207,7 +207,7 @@ html, body{
                 }
                 
             .main-menu .menu-links .menu-link i{
-                font-size:var(--font-size-16);
+                font: size 1.33em;;
             }
 
             .main-menu .menu-links #cart{
@@ -226,7 +226,7 @@ html, body{
     border-top: 1px solid var(--color-theme-gray-2);
     border-bottom: 1px solid var(--color-theme-gray-2);
 }
-    .main-menu > nav > .container{
+    .main-menu > nav > .container{   
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -263,20 +263,22 @@ html, body{
         display: flex;
         justify-content: end;
         align-items: center;
-    }
+    } 
 
-/* showcase*/
-.showcase{
+/* showcase */
+.showcase {
     background-color: var(--color-theme-gray-3);
 }
     .showcase .container{
-        text-align: center;
+        text-align: center;   
         padding-top: 2.4rem;
         padding-bottom: 2.4rem;
     }
     .showcase .showcase-body h1{
         font-family: var(--font-play);
         font-size: 3.5rem;
+        /* text-align: center;
+        margin-bottom: 2rem; */
     }
         .showcase .showcase-body h1 strong{
             font-weight: var(--font-weight-bold);
@@ -285,12 +287,10 @@ html, body{
     .showcase .showcase-body p{
         margin: 2rem 0;
     }
-    .showcase .showcase-body a{
-        display: inline-block;
-    }
     .showcase img{
         display: none;
     }
+            
 /* showcase_1*/
 .showcase_1{
     background-color: var(--color-theme-gray-1);
@@ -526,42 +526,32 @@ html, body{
 
 
 
-
-
-@media (min-width:578px)
-{
-    .top-menu >.container {
-        justify-content: space-between;
-    } 
-}
-
-@media (min-width:768px)
+@media (min-width:576px)
 {
     .top-menu .menu-links {
         display: block;
-    }   
+    } 
+    .top-menu > .container {
+        justify-content: space-between;
+    }
+}
 
+@media (min-width:768px)
+{ 
     .showcase .showcase-body h1{
         font-size: var(--font-size-60);
     }
         .showcase .showcase-body h1 strong{
             display: block;
         }
-    
-    .showcase .showcase-body a{
-        display: inline-block;
-    }
 }
 
 @media (min-width:992px)
 {
-    .top-menu > .container {
-        justify-content: space-between;
-        /*padding: 0;*/
-    }
     .top-menu .menu-links .links {
         display: inline;
     }
+
     .showcase .container{
         display: flex;
         justify-content: space-between;
@@ -570,7 +560,7 @@ html, body{
         padding-top: 0;
         padding-bottom: 0;
     }
-    .showcase img {
+    .showcase img{
         display: block;
         width: 50%;
     }
