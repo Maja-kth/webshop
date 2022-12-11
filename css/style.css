@@ -319,6 +319,7 @@ html, body{
         display: inline-block;
     }
 
+    
 /*webshop-info*/
 .webshop-info{
     padding: 4rem 0;
@@ -427,6 +428,7 @@ html, body{
         grid-column: 5 / -1;
         grid-row: 3 / -1;
     }
+
 
 .new-arrivals {
     padding-top: 2rem;
