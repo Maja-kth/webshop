@@ -213,12 +213,12 @@ html, body{
             .main-menu .menu-links #cart{
                 position: relative;
             }
-            .main-menu .menu-links #cart .badge{
-                background-color: var(--color-theme);
-                position: absolute;
-                top:-1.2rem;
-                left:0.7rem;
-            }
+                .main-menu .menu-links #cart .badge{
+                    background-color: var(--color-theme);
+                    position: absolute;
+                    top:-1.0rem;
+                    left:0.5rem;
+                }
                 .main-menu .menu-links #cart:hover .badge{
                     background-color: var(--color-theme-dark);
                 }
