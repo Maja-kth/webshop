@@ -514,54 +514,133 @@ html, body{
                         color: var(--color-theme);
                     }
                     
-/* showcase_1*/
-.showcase_1 {
+/* showcase-1*/
+.showcase-1 {
     background-color: var(--color-theme-gray-1);
-    height: 418px;
+    height: 435px;
     margin-top:3rem;
     margin-bottom:3rem;
 }
-    .showcase_1 .container{
+    .showcase-1 .container{
         height: 100%;
         display: flex; 
         justify-content: space-between;
         color: var(--color-white);
     }
-    .showcase_1 .sale_new_customer {
+    .showcase-1 .sale-new-customer {
         background-color: var(--color-theme);
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         height: 100%;
-        padding: 0px!important;
-        width: 100% !important;
+        width: 100%;
         min-width: 255px;
-        max-width: 305px !important;
+        max-width: 305px;
     }
     
-    .showcase_1 .sale_new_customer h1{
+    .showcase-1 .sale-new-customer h1{
         font-family: var(--font-play);
         font-weight: var(--font-weight-bold);
-        font-size: var(--font-size-36);
+        font-size: var(--font-size-24);
     }
-        .showcase_1 .sale_new_customer h1 strong{
+        .showcase-1 .sale-new-customer strong{
             font-size:var(--font-size-60) ;     
         }
-        .showcase_1 .sale_new_customer p{
+        .showcase-1 .sale-new-customer p{
             font-family: var(--font-roboto);
             font-weight: var(--font-weight-regular);
             font-size: var(--font-size-16);   
+
         }
 
-    .showcase_1 .learn_more {
+    .showcase-1 .learn-more {
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        max-width: 30%;
+        max-width: 28%;
     }
 
+/* showcase-2*/
+.showcase-2{
+    background-color: var(--color-theme-dark);
+    color: var(--color-white);
+    height: 435px;
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+    .showcase-2 .container{
+        height: 100%;
+        display: flex; 
+        justify-content: space-between;
+    }
+
+        .showcase-2 .left {
+            background-color: var(--color-theme);
+            padding:30px 0px 0px 0px; 
+            height: 60%;
+            min-width: 255px;
+            max-width: 305px;
+        }
+            .showcase-2 .left .flash-sale {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align:center;
+                line-height: 1.7;
+                
+            } 
+                .showcase-2 .left .flash-sale h1{
+                    font-family: var(--font-play);
+                    font-size: var(--font-size-60);
+                    font-weight: var(--font-weight-regular);
+                    line-height: 1;
+                   
+                }
+                .showcase-2 .left .flash-sale p{
+                    font-family: var(--font-roboto);
+                    font-size: var(--font-size-24);
+                    font-weight: var(--font-weight-medium);
+                    margin-top: 7px;
+                }
+
+        .showcase-2 .right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+            .showcase-2 .right .counter-section {
+                    display: flex;
+                    align-items: end;
+                    justify-content: end;
+                    margin:0 0 35px 0;
+            } 
+                .showcase-2 .right .counter-section .counter-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 109px;
+                    height: 109px;
+                    border-radius: 50%;
+                    border: 3px dotted var(--color-theme);
+                    background: var(--color-white);
+                    color: var(--color-theme);
+                    margin:0 0 0 20px;
+                } 
+                    .counter-box strong {
+                        font-family: var(--font-play);
+                        font-size: var(--font-size-36);
+                        font-weight: var(--font-weight-bold);
+                        color: var(--color-theme);
+                        line-height: 0.8;
+                    }
+                    .counter-box span {
+                        display: block;
+                        color: var(--color-theme-dark);
+                    }
 
 /* footer */
 footer {
@@ -579,6 +658,10 @@ footer p {
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-regular);
 }
+
+
+
+
 
 
 @media (min-width:576px)
