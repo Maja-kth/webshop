@@ -71,10 +71,10 @@ html, body{
 .bg-theme{
     background-color: var(--color-theme);
 }
-.instock {
+.instock{
     color:var(--color-product-instock);
 }
-.outofstock {
+.outofstock{
     color:var(--color-product-outofstock);
 }
 .section-title{
@@ -82,7 +82,7 @@ html, body{
     color:var(--color-theme-dark);
     text-align: center;
 }
-    .section-title h1 {
+    .section-title h1{
         font-family: var(--font-play);
         font-weight: var(--font-weight-bold);
         font-size: var(--font-size-36);
@@ -100,13 +100,13 @@ html, body{
     color: var(--color-white);
     height: 40px;
 }
-    .top-menu > .container {
+    .top-menu > .container{
         height: 100%;
         display: flex;
         justify-content: end;
         align-items: center;
     }
-        .top-menu .site-settings {
+        .top-menu .site-settings{
             display: flex;
         }
             .top-menu .site-settings .dropdown-theme{
@@ -152,11 +152,11 @@ html, body{
                 text-decoration: none;
                 margin: 0 1.2rem;
             }
-                .top-menu .menu-links a:hover {
+                .top-menu .menu-links a:hover{
                     color: var(--color-theme-dark);
                 }
             
-                .top-menu .menu-links .social-media {
+                .top-menu .menu-links .social-media{
                     margin-left: 1rem;
                     font-size: var(--font-size-14);
                     }
@@ -168,7 +168,7 @@ html, body{
                         }     
 
 /*main-menu*/
-.main-menu {
+.main-menu{
     background-color: var(--color-white);
     color: var(--color-theme-dark);
 }
@@ -185,7 +185,7 @@ html, body{
         .main-menu .search{
             flex:4;
         }
-        .main-menu .menu-links {
+        .main-menu .menu-links{
             flex:3;
             display: flex;
             justify-content: end;
@@ -266,7 +266,7 @@ html, body{
     } 
 
 /* showcase */
-.showcase {
+.showcase{
     background-color: var(--color-theme-gray-3);
 }
     .showcase .container{
@@ -400,25 +400,27 @@ html, body{
         grid-row: 3 / -1;
     }
 
-/* new-arrivals and featured-products */
-.new-arrivals ,
-.featured-products {
+/* new-arrivals */
+/* featured -products */
+/* top-sellers */
+.new-arrivals,
+.featured-products{
     /* margin-top: 5rem; */
     padding-top:2rem;
     padding-bottom: 5rem;
 }
     .new-arrivals .card,
-    .featured-products .card {
+    .featured-products .card{
         position: relative;
         height: 360px;
         overflow: hidden;
     }
         .new-arrivals .card .img,
-        .featured-products .card .img {
+        .featured-products .card .img{
             height: 400px;
         }
         .new-arrivals .card .card-body,
-        .featured-products .card .card-body {
+        .featured-products .card .card-body{
             position: absolute;
             padding: 1rem;
             bottom: 0;
@@ -434,18 +436,18 @@ html, body{
                 height: 40%;
             }
             .new-arrivals .card .card-body h1,
-            .featured-products .card .card-body h1 {
+            .featured-products .card .card-body h1{
                 font-size: 1.125rem;
                 margin-bottom: 1rem;
                 transition: 0.3s ease-in-out;
                 font-weight: var(--font-weight-regular);
             }
                 .new-arrivals .card:hover .card-body h1,
-                .featured-products .card:hover .card-body h1 {
+                .featured-products .card:hover .card-body h1{
                     margin-bottom: 0;
                 }
             .new-arrivals .card .card-body button,
-            .featured-products .card .card-body button {
+            .featured-products .card .card-body button{
                 background-color: transparent;
                 color: var(--color-white);
                 border: 1px solid var(--color-white);
@@ -455,12 +457,12 @@ html, body{
                 margin: 0.5rem 0;
             }
             .new-arrivals .card .card-body .card-old-price,
-            .featured-products .card .card-body .card-old-price {
+            .featured-products .card .card-body .card-old-price{
                 text-decoration: line-through;
                 margin: 0;
             }
             .new-arrivals .card .card-body .card-discount-price,
-            .featured-products .card .card-body .card-discount-price {
+            .featured-products .card .card-body .card-discount-price{
                 color: var(--color-theme);
                 font-weight: var(--font-weight-medium);
                 font-size: 1.3em;
@@ -468,7 +470,7 @@ html, body{
             }
 
         .new-arrivals .card .card-background,
-        .featured-products .card .card-background {
+        .featured-products .card .card-background{
             position: absolute;
             bottom:0;
             height: 15%;
@@ -482,7 +484,7 @@ html, body{
             height: 100%;
         }
         .new-arrivals .card .card-menu,
-        .featured-products .card .card-menu {
+        .featured-products .card .card-menu{
             position: absolute;
             z-index: 1;
             top: 121%;
@@ -496,21 +498,21 @@ html, body{
             transition: top 0.3s ease-in-out;
         }
             .new-arrivals .card:hover .card-menu,
-            .featured-products .card:hover .card-menu {
+            .featured-products .card:hover .card-menu{
                 top: 20px;
             }
             .new-arrivals .card .card-menu li,
-            .featured-products .card .card-menu li {
+            .featured-products .card .card-menu li{
                 margin-top: 0.3rem;
                 margin-bottom: 0.3rem;
                 font-size: 1.0em;
             }
                 .new-arrivals .card .card-menu li a,
-                .featured-products .card .card-menu li a {
+                .featured-products .card .card-menu li a{
                     color: var(--color-theme-gray-0);
                 }
                     .new-arrivals .card .card-menu li a:hover,
-                    .featured-products .card .card-menu li a:hover {
+                    .featured-products .card .card-menu li a:hover{
                         color: var(--color-theme);
                     }
                     
@@ -538,7 +540,6 @@ html, body{
         min-width: 255px;
         max-width: 305px;
     }
-    
     .showcase-1 .sale-new-customer h1{
         font-family: var(--font-play);
         font-weight: var(--font-weight-bold);
@@ -553,7 +554,6 @@ html, body{
             font-size: var(--font-size-16);   
 
         }
-
     .showcase-1 .learn-more {
         display: flex;
         flex-direction: column;
@@ -640,6 +640,223 @@ html, body{
                     .counter-box span {
                         display: block;
                         color: var(--color-theme-dark);
+                    }
+
+/* showcase-3*/
+.showcase-3 {
+    background-color: var(--color-theme-gray-4);
+    height: 313px;
+    margin-top:3rem;
+}
+    .showcase-3 .container{
+        height: 100%;
+        display: flex; 
+        color: var(--color-theme-dark);
+    }
+    .showcase-3 .subscribe-now{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        height: 70%;
+    }
+    
+    .showcase-3 .subscribe-now h1{
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-36);
+    }
+        .showcase-3 .subscribe-now strong{
+            font-size:var(--font-size-36);  
+            color: var(--color-theme);   
+        }
+        .showcase-3 .subscribe-now p{
+            font-family: var(--font-roboto);
+            font-weight: var(--font-weight-regular);
+            font-size: var(--font-size-16);   
+        }
+    .showcase-3 .right-path {
+        width: 50%;
+        background-color: var(--color-theme-gray-1);
+    }
+
+/* top-sellers */
+.top-sellers .grid{
+    display: grid;
+    gap:0.8rem;
+    grid-template-columns: repeat(2, minmax(100px, 249px));
+    grid-template-rows: repeat(2, minmax(100px,249px));
+}
+.top-sellers .category-box{
+    position: relative;
+    background-color: var(--color-theme-gray-1);
+    border-radius: var(--border-radius-small);
+    /*padding:1rem;*/
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+    .top-sellers .category-box .category-box-title{
+        position: absolute;
+        left:0;
+        bottom:0;
+        width: 50%;
+        border-radius: 0 var(--border-radius-small) 0 0;
+        background-color: var(--color-theme-dark);
+        color: var(--color-theme);
+        padding: 0.5rem 1rem;
+        font-weight: var(--font-weight-medium);
+        height: 36px;
+        transition: 0.2s ease-in-out;
+    }
+        .top-sellers .category-box:hover .category-box-title{
+            height: 75px;
+        }
+            .shop-by-category .category-box .category-box-title span{
+                display: block;
+                color: var(--color-white);
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+            }
+#category-box-1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#category-box-2{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+#category-box-3{
+    grid-column: 4 / -1;
+    grid-row: 1 / 3;
+}
+#category-box-4{
+    grid-column: 1/ 3;
+    grid-row: 2 / -1;
+}
+#category-box-5{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+#category-box-6{
+    grid-column: 3 / 5;
+    grid-row: 3 / -1;
+}
+#category-box-7{
+    grid-column: 5 / -1;
+    grid-row: 3 / -1;
+}
+
+
+/* top-sellers */
+.top-sellers {
+    /* margin-top: 5rem; */
+    padding-top:2rem;
+    padding-bottom: 5rem;
+}
+    .top-sellers .card {
+        position: relative;
+        height: 700px;
+        overflow: hidden;
+    }
+   
+        .top-sellers .card .img {
+            height: 700px;
+        }
+    
+        .top-sellers .card .card-body {
+            position: absolute;
+            padding: 1rem;
+            bottom: 0;
+            height: 10%;
+            width: 100%;
+            color: var(--color-white);
+            z-index: 1;
+            transition:0.3s ease-in-out;
+            font-size: 1rem;
+        }
+            .top-sellers .card:hover .card-body {
+                height: 40%;
+            }
+       
+            .top-sellers .card .card-body h1 {
+                font-size: 1.125rem;
+                margin-bottom: 1rem;
+                transition: 0.3s ease-in-out;
+                font-weight: var(--font-weight-regular);
+            }
+   
+                .top-sellers .card .card:hover .card-body h1  {
+                    margin-bottom: 0;
+                }
+
+            .top-sellers .card .card-body button {
+                background-color: transparent;
+                color: var(--color-white);
+                border: 1px solid var(--color-white);
+                font-size: 0.875rem;
+                padding-left: 0.9rem;
+                padding-right: 0.9rem;
+                margin: 0.5rem 0;
+            }
+      
+            .top-sellers .card .card-body .card-old-price {
+                text-decoration: line-through;
+                margin: 0;
+            }
+       
+            .top-sellers .card .card-body .card-discount-price {
+                color: var(--color-theme);
+                font-weight: var(--font-weight-medium);
+                font-size: 1.3em;
+                margin: 0;
+            }
+
+        .top-sellers .card .card-body {
+            position: absolute;
+            bottom:0;
+            height: 15%;
+            width: 100%;
+            background-color: var(--color-theme-dark);
+            opacity: 0.90;
+            transition: height 0.3s ease-in-out;
+        }
+       
+        .top-sellers .card:hover .card-background {
+            height: 100%;
+        }
+
+        .top-sellers .card .card-menu {
+            position: absolute;
+            z-index: 1;
+            top: 121%;
+            right: 1rem;
+            list-style: none;
+            margin: auto;
+            padding: 0.8rem;
+            font-size: 1.25rem;
+            border-radius: var(--border-radius-medium);
+            background-color: var(--color-white);
+            transition: top 0.3s ease-in-out;
+        }
+      
+            .top-sellers .card:hover .card-menu {
+                top: 20px;
+            }
+     
+            .top-sellers .card .card-menu li {
+                margin-top: 0.3rem;
+                margin-bottom: 0.3rem;
+                font-size: 1.0em;
+            }
+         
+                .top-sellers .card .card-body  {
+                    color: var(--color-theme-gray-0);
+                }
+
+                    .top-sellers .card .card-menu li a:hover {
+                        color: var(--color-theme);
                     }
 
 /* footer */
