@@ -15,7 +15,7 @@
 </head>
 
 <body>
-   <header class="# d-none">
+   <header class="#">
       <div class="top-menu">
          <div class="container">
             <div class="site-settings">
@@ -63,15 +63,18 @@
             <div class="brand">
                <a href="index.html"><img src="images/Logotype.svg" alt="Kenkata webshop"></a>
             </div>
-            <div class="search"></div>
+            <div class="search"></div>                <!--plats för en knapp-->
             <div class="menu-links">
-               <a class="menu-link" href="#"><i class="fa-regular fa-user me-2"></i> My account</a>
+               <a class="menu-link" href="#"><i class="fa-regular fa-user me-2"></i>My account</a>
                <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
-               <a class="menu-link" href="#"> <i class="fa-regular fa-shuffle"></i></a>    
+               <a id="cart" class="menu-link" href="#">
+                  <span class="badge rounded-pill">0</span>
+                  <i class="fa-regular fa-shuffle"></i>
+               </a>    
                <a id="cart" class="menu-link" href="#">
                   <span class="badge rounded-pill">0</span>
                   <i class="fa-regular fa-bag-shopping me-2"></i>
-                  <span>€9999.00</span>
+                  <span>€99999.00</span>
                </a>
             </div>
             
@@ -100,7 +103,7 @@
       </div>
    </header>
  
-   <section class="showcase d-none">
+   <section class="showcase">
       <div class="container">
          <div class="showcase-body">
             <h1>Shopping is <strong> MORE FUN</strong></h1>
@@ -111,7 +114,7 @@
       </div>
    </section>
 
-   <section class="webshop-info d-none">
+   <section class="webshop-info">
       <div class="container">
          <div class="info-box">
             <img src="images/icons/free_shipping_icon.svg" alt="Free shipping">
@@ -144,7 +147,7 @@
       </div>
    </section>
 
-   <section class="shop-by-category d-none">
+   <section class="shop-by-category">
       <div class="container">
          <div class="section-title">
             <h1>SHOP BY <span>CATEGORY</span></h1>
@@ -305,7 +308,7 @@
       </div>
    </section>
 
-   <section class="showcase-1 d-none">
+   <section class="showcase-1">
       <div class="container">
          <div class="sale-new-customer">
             <h1><strong>30%</strong> OFF</h1>
@@ -319,7 +322,7 @@
       </div>
    </section>
 
-   <section class="featured-products d-none">
+   <section class="featured-products">
       <div class="container">
          <div class="section-title">
             <h1>FEATURED <span>PRODUCTS</span></h1>
@@ -452,7 +455,7 @@
             </div>
    </section>
 
-   <section class="showcase-2 d-none">
+   <section class="showcase-2">
       <div class="container">
          <div class="left">
             <div class="flash-sale">
@@ -484,19 +487,15 @@
       </div>
    </section>
 
-
-
-
    <section class="top-sellers">
       <div class="container">
-         <div class="section-title d-none">
-            <h1><span>TOP SELLERS</span></h1>
+         <div class="section-title">
+            <h1>TOP<span> SELLERS</span></h1>
             <img src="images/wave-line.svg"alt="weveline">
             <p>Check out our weekly top sellers in all category</p>
          </div>
          <div class="col">
                <div class="col-left">
-                  <div>
                      <a href="">
                         <div class="card">
                            <ul class="card-menu">
@@ -509,7 +508,7 @@
                            <img src="images/placeholders/placeholder_denim_shirts_male.png" alt="placeholder image">
                            <div class="card-body">
                               <h1 class="card-title">Men's denim shirts full</h1>
-                              <button disabled>Fashion</button>
+                              <button disabled>Men</button>
                               <p class="card-old-price">€39.00</p>
                               <div class="d-flex justify-content-between align-items-center">
                                  <p class="card-discount-price">€20.00</p>
@@ -524,8 +523,7 @@
                            </div>
                            <div class="card-background"></div>
                         </div>
-                     </a>
-                  </div>
+                     </a> 
                </div>
               
                <div class="col-right">
@@ -540,10 +538,10 @@
                                  <li><a href="#"><i class="fa-regular fa-search"></i></a></li>
                                  <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
                               </ul>
-                              <img src="images/placeholders/placeholder_newlook_male.png" alt="placeholder image">
+                              <img src="images/placeholders/placeholder_leather_bag_shoe_female.png" alt="placeholder image">
                               <div class="card-body">
-                                 <h1 class="card-title">New look men's coat</h1>
-                                 <button disabled>Fashion</button>
+                                 <h1 class="card-title">Women's leather bag and shoe</h1>
+                                 <button disabled>Women</button>
                                  <p class="card-old-price">€50.00</p>
                                  <div class="d-flex justify-content-between align-items-center">
                                     <p class="card-discount-price">€20.00</p>
@@ -570,19 +568,19 @@
                                  <li><a href="#"><i class="fa-regular fa-search"></i></a></li>
                                  <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
                               </ul>
-                              <img src="images/placeholders/placeholder_red_blazer_female.png" alt="placeholder image">
+                              <img src="images/placeholders/placeholder_sneakers_male.png" alt="placeholder image">
                               <div class="card-body">
-                                 <h1 class="card-title">Red women's blazer full</h1>
-                                 <button disabled>Fashion</button>
-                                 <p class="card-old-price">€45.00</p>
+                                 <h1 class="card-title">New look men's sneakers</h1>
+                                 <button disabled>Shoes</button>
+                                 <p class="card-old-price">€50.00</p>
                                  <div class="d-flex justify-content-between align-items-center">
-                                    <p class="card-discount-price">€25.00</p>
+                                    <p class="card-discount-price">€20.00</p>
                                     <div class="text-theme">
                                        <i class="fa-solid fa-star"></i>
                                        <i class="fa-solid fa-star"></i>
                                        <i class="fa-solid fa-star"></i>
                                        <i class="fa-solid fa-star"></i>
-                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-regular fa-star"></i>
                                     </div>
                                  </div>
                               </div>
@@ -590,19 +588,13 @@
                            </div>
                         </a>
                      </div>
-                  </div>
-                  
+                  </div>         
                </div>
          </div>
       </div>
    </section>
 
-
-
-
-
-
-   <section class="showcase-3 d-none">
+   <section class="showcase-3">
       <div class="container">
          <div class="subscribe-now">
             <h1>SUBSCRIBE<strong> NOW</strong></h1>
@@ -614,13 +606,11 @@
       </div>
    </section>
 
-   <footer class="d-none">
+   <footer class="">
       <div class="container">
          <p>@ Copyright 2022 Kenkata</p>
       </div>   
-  </footer>
-
-   <div style="height:400px"></div><!-- TA BORT EFTERÅT!-->
+   </footer>
    
 </body>
 </html>
