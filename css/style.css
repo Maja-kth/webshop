@@ -618,7 +618,7 @@ html, body{
                     width: 109px;
                     height: 109px;
                     border-radius: 50%;
-                    border: 3px dotted var(--color-theme);
+                    outline: 3px dotted var(--color-theme);
                     background: var(--color-white);
                     color: var(--color-theme);
                     margin:0 0 0 20px;
@@ -855,7 +855,6 @@ footer p {
     .top-menu .menu-links .links {
         display: inline;
     }
-
     .showcase .container{
         display: flex;
         justify-content: space-between;
